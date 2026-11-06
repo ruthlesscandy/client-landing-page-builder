@@ -1,21 +1,19 @@
-# Client Landing Page Builder
+# Edit your business page — no code needed
 
-A simple first version of a business landing page for a menu, photos, social links, and news. It is a static website: no sign-in or database is set up yet.
+Open the website and press **✏️ Edit this page** in the small white box at the top-right.
 
-## Add your business details
+- **Change words:** click text and type.
+- **Change a photo:** click the photo, choose a picture from your device.
+- **Move a section:** drag it by the **⋮⋮ Drag section** handle.
+- **Add a menu item or update:** use the buttons in the editor box.
+- **Change a social link:** while editing, click its social link and paste the correct web address.
+- **Save:** changes save automatically in this browser. You can also press **Save changes**.
+- **Undo everything:** press **Reset sample**.
 
-1. Open [`app.js`](app.js) in the repository.
-2. Click the pencil/edit button on GitHub.
-3. Replace the sample information in the `business` section at the top with your business name, description, menu, address, hours, phone, and social links.
-4. Replace the sample image URLs with links to your own pictures. The links should begin with `https://`.
-5. Click **Commit changes**. The webpage reads the details from this file.
+## Open the page
 
-For example, change `name: "Your Business"` to `name: "Sunny Side Cafe"`. To add a menu item, copy one `{ name, description, price }` entry and edit its values. To add a photo or update, copy an existing entry in that list.
+Open `index.html` in a browser to try it. To put the page online free, open this repository's **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, and save. GitHub will show the website address there after publishing.
 
-## Preview it
+## Important: where your edits are saved
 
-You can preview locally by downloading the repository and opening `index.html` in a browser. To publish it free with GitHub Pages, open the repository's **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save. GitHub will show the public website link in that Pages section after it builds.
-
-## Important for client editing
-
-Right now, changing details means editing `app.js` and committing the change. This starter does not yet include a private editor, user accounts, photo-upload storage, or a drag-and-drop page builder. Those features need to be added before clients can safely sign in and edit their own live pages. Do not put passwords, private customer information, or other secrets in this public repository.
+This easy editor saves changes in the browser and device where you made them. It is a starter editor, not a hosted account system: edits do **not** automatically update the public GitHub Pages website for other people or appear on another device. Photos are also stored in that browser. To have client edits update the same live website for everyone, the project needs an online database and secure sign-in, which is a separate next step. Do not put passwords or private customer details in the website.

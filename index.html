@@ -13,49 +13,41 @@
   <script src="app.js" defer></script>
 </head>
 <body>
+  <aside class="editor" aria-label="Website editor">
+    <div class="editor-topline"><strong>Easy page editor</strong><button id="edit-toggle" class="editor-button editor-primary" type="button">✏️ Edit this page</button></div>
+    <div id="editor-tools" class="editor-tools" hidden>
+      <p class="editor-help">Click text to change it. Click a photo to replace it. Drag a section by its handle to move it.</p>
+      <div class="editor-actions">
+        <button id="save-page" class="editor-button editor-save" type="button">Save changes</button>
+        <button id="add-menu" class="editor-button" type="button">＋ Add menu item</button>
+        <button id="add-update" class="editor-button" type="button">＋ Add update</button>
+        <button id="reset-page" class="editor-button editor-reset" type="button">Reset sample</button>
+      </div>
+      <p id="save-status" class="save-status" aria-live="polite">Changes save in this browser.</p>
+    </div>
+  </aside>
+  <input id="image-picker" type="file" accept="image/*" hidden>
+
   <header class="topbar">
     <a class="brand" href="#home" id="brand-name">Your Business</a>
-    <nav aria-label="Main navigation">
-      <a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#updates">Updates</a>
-    </nav>
+    <nav aria-label="Main navigation"><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#updates">Updates</a></nav>
     <a class="button button-small" id="header-cta" href="#contact">Visit us</a>
   </header>
 
   <main>
     <section class="hero" id="home">
       <div class="hero-copy">
-        <p class="eyebrow" id="hero-eyebrow"></p>
-        <h1 id="hero-title"></h1>
-        <p class="hero-description" id="hero-description"></p>
+        <p class="eyebrow" id="hero-eyebrow"></p><h1 id="hero-title"></h1><p class="hero-description" id="hero-description"></p>
         <div class="hero-actions"><a class="button" id="hero-cta" href="#menu">See the menu</a><a class="text-link" id="hero-secondary" href="#contact">Find us <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="hero-image-wrap"><img id="hero-image" alt="Business feature" class="hero-image"><span class="image-note" id="image-note"></span></div>
     </section>
-
-    <section class="intro section-pad" id="about">
-      <p class="eyebrow">A little about us</p><h2 id="about-title"></h2><p id="about-copy" class="intro-copy"></p>
-    </section>
-
-    <section class="menu-section section-pad" id="menu">
-      <div class="section-heading"><div><p class="eyebrow">Made with care</p><h2 id="menu-title">A few favourites</h2></div><p id="menu-note" class="muted"></p></div>
-      <div id="menu-list" class="menu-grid"></div>
-    </section>
-
-    <section class="gallery-section section-pad" id="gallery">
-      <div class="section-heading"><div><p class="eyebrow">From our place</p><h2 id="gallery-title">A taste of the day</h2></div><p class="muted">Follow along for more.</p></div>
-      <div id="gallery-grid" class="gallery-grid"></div>
-    </section>
-
-    <section class="updates-section section-pad" id="updates">
-      <p class="eyebrow">What's happening</p><h2 id="updates-title">The latest</h2><div id="updates-list" class="updates-list"></div>
-    </section>
-
-    <section class="contact-section section-pad" id="contact">
-      <div><p class="eyebrow">Come say hello</p><h2 id="contact-title"></h2><p id="contact-copy"></p></div>
-      <div class="contact-card"><p class="contact-label">Find us</p><p id="address"></p><a id="phone" class="contact-link"></a><p id="hours"></p><div id="social-links" class="social-links"></div></div>
-    </section>
+    <section class="intro section-pad" id="about"><p class="eyebrow">A little about us</p><h2 id="about-title"></h2><p id="about-copy" class="intro-copy"></p></section>
+    <section class="menu-section section-pad" id="menu"><div class="section-heading"><div><p class="eyebrow">Made with care</p><h2 id="menu-title">A few favourites</h2></div><p id="menu-note" class="muted"></p></div><div id="menu-list" class="menu-grid"></div></section>
+    <section class="gallery-section section-pad" id="gallery"><div class="section-heading"><div><p class="eyebrow">From our place</p><h2 id="gallery-title">A taste of the day</h2></div><p class="muted">Follow along for more.</p></div><div id="gallery-grid" class="gallery-grid"></div></section>
+    <section class="updates-section section-pad" id="updates"><p class="eyebrow">What's happening</p><h2 id="updates-title">The latest</h2><div id="updates-list" class="updates-list"></div></section>
+    <section class="contact-section section-pad" id="contact"><div><p class="eyebrow">Come say hello</p><h2 id="contact-title"></h2><p id="contact-copy"></p></div><div class="contact-card"><p class="contact-label">Find us</p><p id="address"></p><a id="phone" class="contact-link"></a><p id="hours"></p><div id="social-links" class="social-links"></div></div></section>
   </main>
-
   <footer><span id="footer-name"></span><span>Made for good things.</span></footer>
 </body>
 </html>
